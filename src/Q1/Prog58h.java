@@ -6,22 +6,22 @@ public class Prog58h {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter amount saved: ");
-        int amount = input.nextInt();
+        double a = input.nextDouble();
         System.out.println();
 
         System.out.print("Enter the interest rate: ");
-        double rate = input.nextDouble();
+        double r = input.nextDouble();
         System.out.println();
 
         System.out.print("Enter number of times compounded per year: ");
-        int year = input.nextInt();
+        int n = input.nextInt();
         System.out.println();
 
         System.out.print("Enter number of day at interest: ");
-        int days = input.nextInt();
+        int t = input.nextInt();
         System.out.println();
 
-        double interest = amount*(1+(0.01*rate/year)*year*days/365);
-        System.out.print(interest);
+        double Interest = a*(1+(0.01*r/n)*(n*t/365.0));
+        System.out.print(Interest);
     }
 }

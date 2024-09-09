@@ -22,5 +22,7 @@ public class Prog58t {
         double give = given - price;
         System.out.print(give);
 
+
+
     }
 }

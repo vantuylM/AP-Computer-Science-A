@@ -21,7 +21,7 @@ public class Prog58h {
         int days = input.nextInt();
         System.out.println();
 
-        double interest = amount*(1+(0.1*rate/year)*year*days/365);
+        double interest = amount*(1+(0.01*rate/year)*year*days/365);
         System.out.print(interest);
     }
 }

@@ -21,7 +21,8 @@ public class Prog58h {
         int t = input.nextInt();
         System.out.println();
 
-        double Interest = a*(1+(0.01*r/n)*(n*t/365.0));
-        System.out.print(Interest);
+        double Interest = a*(1+((0.01*r)/n)*((n*t)/365.0));
+        double interest = Math.round(Interest);
+        System.out.printf("The interest will be $%.2f\n", interest);
     }
 }

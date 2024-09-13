@@ -20,7 +20,14 @@ public class Prog58t {
         double penny = 0.01;
 
         double give = given - price;
-        System.out.print("Change due: " + give);
+        System.out.println("Change due: " + give);
+        double Give = 0;
 
+        int GIVE = (int)give;
+        double a = give % GIVE;
+        System.out.print("Dollar(s) " + GIVE);
+        System.out.println("Change is " + a);
+
+        //if (give >= dollar) Give
     }
 }

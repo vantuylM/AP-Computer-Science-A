@@ -13,25 +13,25 @@ public class Prog58t {
         double given = input.nextDouble();
         System.out.println();
 
-        int dollar = 1;
+        double dollar = 1;
         double quarter = 0.25;
         double dime = 0.10;
         double nickel = 0.05;
         double penny = 0.01;
-        int givedollar = 0;
+        double givedollar = 0;
         double givequarter = 0;
         double givedime = 0;
         double givenickle = 0;
         double givepenny = 0;
 
         double give = given - price;
-        System.out.println("Change due: " + give);
         double Give = 0;
 
         //int GIVE = (int)give;
         //double a = give % GIVE;
         //System.out.println("Dollar(s) " + GIVE);
         //System.out.println("Change is " + a*100.00/100.00);
+        System.out.println("Change is: " + give);
         while (give > 0) {
             if (give >= 1) {
                 give -= 1;
@@ -56,12 +56,26 @@ public class Prog58t {
             else if (give >=0.01) {
                 give -= 0.01;
                 givepenny += 1;
-                //System.out.print(givepenny);
+                //System.out.print(givepenny);=
             }
+            else {give = 0; }
         }
             //System.out.println(givedollar);
-        //System.out.println("Dollars" + givedollar + "\n Quarters" + givequarter + "\n Dimes" + givedime + "\n Nickle" + givenickle + "\nPenny" + givepenny);
+        System.out.println("Dollars" + givedollar + "\n Quarters" + givequarter + "\n Dimes" + givedime + "\n Nickle" + givenickle + "\nPenny" + givepenny);
 
         //if (give >= dollar) Give
+
     }
 }
+/*
+Enter amount: 125.32
+
+Enter money given 140.00
+
+Change is: 14.68
+Dollars14.0
+ Quarters2.0
+ Dimes1.0
+ Nickle1.0
+Penny3.0
+ */

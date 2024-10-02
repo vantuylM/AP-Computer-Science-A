@@ -24,4 +24,3 @@ public class StringInt1 {
 beautiful beach
 Duplicate characters: b e a u
 */
-}

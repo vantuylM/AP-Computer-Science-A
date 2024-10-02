@@ -22,4 +22,4 @@ public class MOSE20141 {
 Enter a word: coolbeens
 coolbeens contains 2 double letters
 */
-}
+

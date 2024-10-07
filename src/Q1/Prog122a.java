@@ -5,7 +5,7 @@ public class Prog122a {
         int a = 1;
         while (a <=50){
             int Square = a * a;
-            double SquareRoot =
+            double SquareRoot =0;
         }
     }
 }

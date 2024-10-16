@@ -19,11 +19,11 @@ public class Cl93a {
 
 
     public void calc() {
-        double baseRate = kwh * 0.0475;
-        double surcharge = baseRate / 10;
-        double cityTax = baseRate * 0.03;
-        double FinalPrice = baseRate + surcharge + cityTax;
-        double lateTotal = (FinalPrice / 4) + FinalPrice;
+        baseRate = kwh * 0.0475;
+        surcharge = baseRate / 10;
+        cityTax = baseRate * 0.03;
+        total = baseRate + surcharge + cityTax;
+        lateTotal = (total / 4) + total;
     } // TODO
 
     public String toString() {

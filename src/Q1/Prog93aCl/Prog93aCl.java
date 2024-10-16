@@ -6,11 +6,12 @@ import java.io.IOException;
 public class Prog93aCl {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter KWH used: ");
         int kwh = input.nextInt();
 
         new File("Langdat/Prog93a.dat");
         Cl93a wow = new Cl93a(kwh);
         wow.calc();
-        System.out.print(wow.toString());
+        System.out.print(wow);
     }
 }

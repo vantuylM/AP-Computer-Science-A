@@ -13,7 +13,7 @@ public class Cl402a {
 
     public void calc(){
         double average = myScore / 21;
-        double myDiff = myScore - average;
+               myDiff = myScore - average;
     }
 
     public String toString(){

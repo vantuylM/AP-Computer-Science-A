@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class BigArray2 {
     public static void printCat(Cat  cat) {
-        System.out.printf("%s\t%f\t$%.2f\n",
+        System.out.printf("%s\t%f\t%d\t$%.2f\n",
                 cat.getName(), cat.getWeight(), cat.getAge(), cat.getCost());
     }
     public static void main(String[] args) {
@@ -68,6 +68,30 @@ public class BigArray2 {
             System.out.println("\n10. The current cat names are:");
             for (Cat cat : cats)
                 if (cat != null) System.out.print(cat.getName() + "\t");
+            System.out.println();
+
+            int k = 0;
+            while (k < numCats) {
+                if (cats[k].getCost() < 26) {
+                    for (int j = k; j < numCats - 1; j++)
+                        cats[j] = cats[j + 1];
+                    numCats--;
+                }else {
+                    k++;
+                }
+            }
+
+            System.out.println("\n11. The cats costing >= $26 actually cost:");
+            for (int c = 0; c < numCats; c++)
+                System.out.print(cats[c].getCost() + " ");
+            System.out.println();
+
+            System.out.println("\n12. The cats being put on a diet are:");
+            for (int i = 0; i < numCats; i++) {
+                Cat cat = cats[i];
+                if (cat.getWeight() > 15)
+                    System.out.print(cat.getName() + "\t");
+            }
             System.out.println();
 
             while (file.hasNext()) {

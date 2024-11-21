@@ -7,13 +7,13 @@ public class Cl402a {
     private double myAverage;
     private double myTotal;
 
-    public Cl402a(int id, int score, double total){
-        myId = id;
+    public Cat(int ID, int score) {
+        myId = ID;
         myScore = score;
-        myDiff = 0;
-        myAverage = 0;
-        myTotal = total;
     }
+
+    public void setWeight(int id) { myId = id; }
+    public void setCost(int score) { myScore = score; }
 
     public void calc(){
         myAverage = myTotal / 21;

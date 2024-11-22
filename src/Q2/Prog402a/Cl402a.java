@@ -7,8 +7,8 @@ public class Cl402a {
     private double myAverage;
     private double myTotal;
 
-    public Cat(int ID, int score) {
-        myId = ID;
+    public Cl402a(int Id, int score) {
+        myId = Id;
         myScore = score;
     }
 

@@ -13,7 +13,7 @@ public class Prog402a {
         for (int lcv = 0; lcv < 42; lcv++){
             int id = file.nextInt();
             int score = file.nextInt();
-
+            num[lcv] = new Cl402a(id, score);
         }
 
 

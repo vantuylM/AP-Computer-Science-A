@@ -14,7 +14,9 @@ public class Prog402a {
             int id = file.nextInt();
             int score = file.nextInt();
             num[lcv] = new Cl402a(id, score);
+            //Cl402a wow = new Cl402a(id, score);
         }
+
 
 
     } catch (IOException e) {

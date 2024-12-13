@@ -1,9 +1,9 @@
 package Q2.LP3_10;
 
 public class ClLP3_10 {
-    private double myBurger;
-    private double myFries;
-    private double mySoda;
+    private int myBurger;
+    private int myFries;
+    private int mySoda;
     private double myTotalBefore;
     private double myTax;
     private double myAmountGiven;
@@ -11,13 +11,13 @@ public class ClLP3_10 {
     private double myTotal;
     private double myTaxTotal;
 
-    public ClLP3_10(int burger, int fries, int soda, double given){
-        myAmountGiven = given;
+    public ClLP3_10(int burger, int fries, int soda){
         myBurger = burger;
         myFries = fries;
         mySoda = soda;
-        myTotal = 0;
-        myTaxTotal = 0;
+    }
+    public ClLP3_10(double given){
+        myAmountGiven = given;
     }
     public void calc(){
         myTotal = myBurger * 1.69 + myFries * 1.09 + mySoda * .99;
@@ -25,4 +25,8 @@ public class ClLP3_10 {
         myTaxTotal = myTax + myTotal;
         myChange = myAmountGiven - myTaxTotal;
     }
+    public double getTotal() { return myTotal; }
+    public double getTax() { return myTax; }
+    public double getTaxTotal() { return myTaxTotal; }
+    public double getChange() { return myChange; }
 }

@@ -29,5 +29,5 @@ public class ClLP3_10 {
     public double getTax() { return myTax; }
     public double getTaxTotal() { return myTaxTotal; }
     public double getChange() { return myChange; }
-    public double setGiven(double given) { myAmountGiven = given; }
+    public void setGiven(double given) { myAmountGiven = given; }
 }

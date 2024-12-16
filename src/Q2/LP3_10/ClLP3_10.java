@@ -16,9 +16,9 @@ public class ClLP3_10 {
         myFries = fries;
         mySoda = soda;
     }
-    public ClLP3_10(double given){
-        myAmountGiven = given;
-    }
+    //public ClLP3_10(double given){
+        //myAmountGiven = given;
+    //}
     public void calc(){
         myTotal = myBurger * 1.69 + myFries * 1.09 + mySoda * .99;
         myTax = myTotal * 0.065;
@@ -29,4 +29,5 @@ public class ClLP3_10 {
     public double getTax() { return myTax; }
     public double getTaxTotal() { return myTaxTotal; }
     public double getChange() { return myChange; }
+    public double setGiven(double given) { myAmountGiven = given; }
 }

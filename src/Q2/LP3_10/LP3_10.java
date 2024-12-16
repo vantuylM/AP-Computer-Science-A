@@ -19,6 +19,7 @@ public class LP3_10 {
         System.out.print("Enter amount given: ");
         double given = input.nextDouble();
         //ClLP3_10 wow = new ClLP3_10(given);
+        wow.setGiven(given);
         wow.calc();
         System.out.print("Change: " + wow.getChange());
     }

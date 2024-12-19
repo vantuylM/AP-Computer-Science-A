@@ -22,12 +22,17 @@ public class ClLP3_14 {
         myTotalVoters = myNYAwbrey + myNYMartinez + myNJAwbrey + myNJMartinez + myConMartinez + myConAwbrey;
         myAwbreyTotal = myNYAwbrey + myNJAwbrey + myConAwbrey;
         myMartinezTotal = myNYMartinez + myNJMartinez + myConMartinez;
-        myAPercentage = myAwbreyTotal / myTotalVoters;
-        myMPercentage = myMartinezTotal / myTotalVoters;
+        myAPercentage = (double) myAwbreyTotal / myTotalVoters * 100;
+        myMPercentage = (double) myMartinezTotal / myTotalVoters * 100;
     }
 
     public void setAVCON(int AVCON) { myConAwbrey = AVCON; }
     public void setMVCON(int MVCON) { myConMartinez = MVCON; }
     public void setAVNJ(int AVNJ) { myNJAwbrey = AVNJ; }
     public void setMVNJ(int MVNJ) { myNJMartinez = MVNJ; }
+    public int getAwbreyTotal() { return myAwbreyTotal; }
+    public int getMartinezTotal() { return myMartinezTotal; }
+    public double getAPercent() { return myAPercentage; }
+    public double getMPercent() { return myMPercentage; }
+    public int getTotal() { return myTotalVoters; }
 }

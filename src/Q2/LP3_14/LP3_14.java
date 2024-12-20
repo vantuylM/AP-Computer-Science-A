@@ -23,13 +23,23 @@ public class LP3_14 {
         wow.setAVCON(AVCON);
         wow.setMVCON(MVCON);
         wow.calc();
-        System.out.print("Canidate\tVotes\tPercentage\nAwbrey\t"
-                + wow.getAwbreyTotal()
-                + "\t\t" + wow.getAPercent()
-                + "\nMartinez\t"
-                + wow.getMartinezTotal()
-                + "\t\t" + wow.getMPercent()
-                + "\nTotal votes\t  "
-                + wow.getTotal());
+        System.out.printf("Canidate\tVotes\tPercentage\nAwbrey\t\t%d\t\t%.2f\nMartinez\t%d\t\t%.2f\nTotal votes\t  %d",
+                wow.getAwbreyTotal(), wow.getAPercent(), wow.getMartinezTotal(), wow.getMPercent(), wow.getTotal());
     }
 }
+
+/*
+Election results for New York
+Awbrey: 314159
+Martinez: 271860
+Election results for New Jersey
+Awbrey: 89008
+Martinez: 121032
+Election results for Connecticut
+Awbrey: 213451
+Martinez: 231034
+Canidate	Votes	Percentage
+Awbrey		616618		49.71
+Martinez	623926		50.29
+Total votes	  1240544
+ */

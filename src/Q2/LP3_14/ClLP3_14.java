@@ -24,6 +24,8 @@ public class ClLP3_14 {
         myMartinezTotal = myNYMartinez + myNJMartinez + myConMartinez;
         myAPercentage = (double) myAwbreyTotal / myTotalVoters * 100;
         myMPercentage = (double) myMartinezTotal / myTotalVoters * 100;
+        //myAPercentage = myAPercentage - (myAPercentage % 0.01);
+        //myMPercentage = myMPercentage - (myMPercentage % 0.01);
     }
 
     public void setAVCON(int AVCON) { myConAwbrey = AVCON; }

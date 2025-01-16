@@ -24,9 +24,11 @@ public class Prog465b {
 
             System.out.println();
 
-            for (int r = 0; r < mat.length; r++) {
-                for (int c = 0; c < mat[r].length;)
-            }
+            System.out.println("Row\tColumn");
+            //for (int r = 0; r < mat.length; r++) {
+             //   for (int c = 0; c < mat[r].length; c++)
+
+           // }
 
 
         } catch (IOException e) {
